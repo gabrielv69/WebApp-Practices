@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Registro">
+    <meta name="keywords" content="HTML5,Formulario, Registro">
+    <title>Contacta.me</title>
+    <style>
+        h1,form{width: 90%; margin-left:auto;margin-right:auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>REGISTRO</h1>
+    </header>
+    <form method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" size="35%" required>      
+        <br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" name="apellido" size="35%" required>      
+        <br>
+        <label for="correo">Correo:</label><br>
+        <input type="email" name="correo" size="35%" required>      
+        <br>
+        <label for="celular">Celular:</label><br>
+        <input type="text" name="celular" size="35%"pattern="^((8|9)[0-9]{8})"> 
+        <br>
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" name="contraseña" minlength="8" size="35%" required>
+        <br>
+        <label for="cargo">Cargo:</label>
+                    <select name="opciones" id="cargo">
+                        <option value="">--Selecciona--</option>
+                        <option value="Director">Director</option>
+                        <option value="Operador">Operador</option>
+                        <option value="Supervisor">Supervisor</option>
+                    </select><br>
+        <br>
+        <input type="submit" value="Enviar"> 

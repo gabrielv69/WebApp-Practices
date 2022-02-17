@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cine[
+<!ELEMENT cine (directores,peliculas,(taquilla|distribuidor))>
+<!ELEMENT taquilla (#PCDATA)>
+<!ELEMENT directores (director*)>
+<!ATTLIST directores id CDATA #REQUIRED>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT peliculas (pelicula*)>
+<!ELEMENT pelicula (#PCDATA)>
+<!ELEMENT distribuidor (#PCDATA)>
+]>
+
+<cine>
+    <directores id="1">
+        <director>Quentin Tarantino</director>
+        <director>James Cameron</director>
+    </directores>
+    <peliculas>
+        <pelicula> Avatar </pelicula>
+        <pelicula> Titanic </pelicula>
+    </peliculas>
+    <distribuidor> distribuye</distribuidor>
+</cine>

@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Controles de Formulario HTML</title>  
+        <style>
+            table { width: 90%;border: 1px solid #000;margin-left: auto; margin-right: auto; }
+            th,td { width: 25%;text-align: center;vertical-align: top; border: 1px solid #000;border-collapse: collapse;padding: 0.3em; caption-side: bottom; }
+            caption {padding: 0.3em;color: #fff; background: #000;}
+            th {  background: #eee; color: darkblue;}
+            h1{text-align: center; color: darkblue;}
+        </style>
+    </head>
+    <body>
+        <!--ENCABEZADOS (Etiquetas h)-->
+        <h1> Controles de Formulario</h1>
+        <p> Gabriel Vivas</p>
+
+
+        <!--TABLAS-->
+        <table border=1>
+            <tr>
+                <th>Nombre</th>
+                <th>Visualización</th>
+                <th>Código</th>
+            </tr>
+            <tr>
+                <td>input submit</td>
+                <td><input type="submit" value="Enviar"><br></td>
+                <td>&lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input text</td>
+                <td> <input type="text" id="Texto" name="texto"><br></td>
+                <td>&lt;input type=&quot;text&quot; id=&quot;Texto&quot; name=&quot;texto&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input password</td>
+                <td><input type="password" id="pass" name="password" minlength="8" required><br></td>
+                <td>&lt;input type=&quot;password&quot; id=&quot;pass&quot; name=&quot;password&quot; minlength=&quot;8&quot; required&gt;</td>
+            </tr>
+            <tr>
+                <td>input button</td>
+                <td> <input type="button" value="Botón"> <br></td>
+                <td>&lt;input type=&quot;button&quot; value=&quot;Bot&oacute;n&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input date</td>
+                <td><input type="date" id="date" name="date" min="1900-01-01" max="2021-12-31"><br></td>
+                <td>&lt;input type=&quot;date&quot; id=&quot;date&quot; name=&quot;date&quot; min=&quot;1900-01-01&quot; max=&quot;2021-12-31&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input number</td>
+                <td><input type="number" min="1" max="100"><br></td>
+                <td>&lt;input type=&quot;number&quot; min=&quot;1&quot; max=&quot;100&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input range</td>
+                <td><input type="range"  min="0" max="100" value="85" step="5"><br></td>
+                <td>&lt;input type=&quot;range&quot;  min=&quot;0&quot; max=&quot;100&quot; value=&quot;85&quot; step=&quot;5&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input email</td>
+                <td><input type="email" placeholder="Ingrese Email"><br></td>
+                <td>&lt;input type=&quot;email&quot; placeholder=&quot;Ingrese Email&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input color</td>
+                <td><input type="color" value="#f6b73c"><br></td>
+                <td>&lt;input type=&quot;color&quot; value=&quot;#f6b73c&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input hidden</td>
+                <td><input type="hidden"  value="Data Oculta"><br></td>
+                <td>&lt;input type=&quot;hidden&quot;  value=&quot;Data Oculta&quot;&gt;</td>
+            </tr>
+            <tr>
+                <td>input checkbox</td>
+                <td><input type="checkbox" id="opcion1" name="opcion1" value="opcion1" checked>
+                    <label for="opcion1"> Marcar</label><br></td>
+                <td>&lt;input type=&quot;checkbox&quot; id=&quot;opcion1&quot; name=&quot;opcion1&quot; value=&quot;opcion1&quot; checked&gt;
+                    <br>
+                    &lt;label for=&quot;opcion1&quot;&gt; Marcar&lt;/label&gt;&lt;br&gt;</td>
+            </tr>
+            <tr>
+                <td>input radio</td>
+                <td><input type="radio" id="opcion1" name="opciones" value="opcion1">
+                    <label for="opcion1">Opcion 1</label><br>
+                    <input type="radio" id="opcion2" name="opciones" value="opcion2">
+                    <label for="opcion2">Opcion 2</label><br></td>
+                <td>&lt;input type=&quot;radio&quot; id=&quot;opcion1&quot; name=&quot;opciones&quot; value=&quot;opcion1&quot;&gt;
+                    <br>
+                    &lt;label for=&quot;opcion1&quot;&gt;Opcion 1&lt;/label&gt;&lt;br&gt;
+                    <br>
+                    &lt;input type=&quot;radio&quot; id=&quot;opcion2&quot; name=&quot;opciones&quot; value=&quot;opcion2&quot;&gt;
+                    <br>
+                    &lt;label for=&quot;opcion2&quot;&gt;Opcion 2&lt;/label&gt;&lt;br&gt;&lt;/td&gt;</td>
+            </tr>
+            <tr>
+                <td>select único</td>
+                <td><label for="select-option">Selecciona:</label>
+                    <select name="opciones" id="select-option">
+                        <option value="">--Selecciona--</option>
+                        <option value="opcion1">Opcion1</option>
+                        <option value="opcion2">Opcion2</option>
+                        <option value="opcion3">Opcion3</option>
+                    </select><br></td>
+                <td>&lt;label for=&quot;select-option&quot;&gt;Selecciona:&lt;/label&gt;
+                    <br>
+                    &lt;select name=&quot;opciones&quot; id=&quot;select-option&quot;&gt;
+                    <br>
+                        &lt;option value=&quot;&quot;&gt;--Selecciona--&lt;/option&gt;
+                        <br>
+                        &lt;option value=&quot;opcion1&quot;&gt;Opcion1&lt;/option&gt;
+                        <br>
+                        &lt;option value=&quot;opcion2&quot;&gt;Opcion2&lt;/option&gt;
+                        <br>
+                        &lt;option value=&quot;opcion3&quot;&gt;Opcion3&lt;/option&gt;
+                        <br>
+                    &lt;/select&gt;&lt;br&gt;</td>
+            </tr>
+            <tr>
+                <td>select múltiple</td>
+                <td><select multiple size="3">
+                    <option>Opcion1</option>
+                    <option>Opcion2</option>
+                    <option>Opcion3</option>
+                  </select></td>
+                <td>&lt;select multiple size=&quot;3&quot;&gt;
+                    <br>
+                    &lt;option&gt;Opcion1&lt;/option&gt;
+                    <br>
+                    &lt;option&gt;Opcion2&lt;/option&gt;
+                    <br>
+                    &lt;option&gt;Opcion3&lt;/option&gt;
+                    <br>
+                  &lt;/select&gt;</td>
+            </tr>
+            <tr>
+                <td>textarea</td>
+                <td><textarea rows="12" cols="28"> Text area</textarea><br></td>
+                <td>&lt;textarea rows=&quot;12&quot; cols=&quot;28&quot;&gt; Text area&lt;/textarea&gt;&lt;br&gt;</td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td><button type="button"> Botón </button><br></td>
+                <td>&lt;button type=&quot;button&quot;&gt; Bot&oacute;n &lt;/button&gt;&lt;br&gt;</td>
+            </tr>
+        </table>
+       
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd ="http://www.w3.org/2001/XMLSchema">
+   
+<xsd:attribute name="id" type="xsd:string"/>
+<xsd:attribute name="nombreEmpresa" type="xsd:string"/>
+
+<xsd:element name="fotografia" type="xsd:string"/>
+<xsd:element name="titulo" type="xsd:string"/>
+<xsd:element name="nombre" type="xsd:string"/>
+<xsd:element name="apellido" type="xsd:string"/>
+<xsd:element name="pagina" type="xsd:string"/>
+<xsd:element name="fechaCumple" type="xsd:string"/>
+<xsd:element name="direccion" type="xsd:string"/>
+
+<xsd:element name="movil" type="xsd:integer"/>
+<xsd:element name="casa" type="xsd:integer"/>
+<xsd:element name="trabajo" type="xsd:integer"/>
+<xsd:element name="principal" type="xsd:integer"/>
+<xsd:element name="fax" type="xsd:integer"/>
+
+<xsd:element name="ciudad" type="xsd:string"/>
+<xsd:element name="pais" type="xsd:string"/>
+<xsd:element name="geolocalizacion" type="xsd:string"/>
+
+<xsd:element name="llamada" type="xsd:string"/>
+<xsd:element name="sms" type="xsd:string"/>
+
+<xsd:element name="agenda">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="contacto" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="contacto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="informacion"/>
+                <xsd:element ref="empresa"/>
+                <xsd:element ref="telefonos"/>
+                <xsd:element ref="localizacion"/>
+                <xsd:element ref="tonos"/>
+            </xsd:sequence>
+            <xsd:attribute ref= "id"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="informacion">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="fotografia"/>
+                <xsd:element ref="titulo"/>
+                <xsd:element ref="nombre"/>
+                <xsd:element ref="apellido"/>
+                <xsd:element ref="pagina"/>
+                <xsd:element ref="fechaCumple"/>
+                <xsd:element ref="direccion"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="empresa">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tipoEmpresa"/>
+            </xsd:sequence>
+            <xsd:attribute ref="nombreEmpresa"/>
+        </xsd:complexType>
+    </xsd:element>
+
+        <xsd:element name="tipoEmpresa">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="pública"/>
+                    <xsd:enumeration value="privada"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:element>
+
+    <xsd:element name="telefonos">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="movil" minOccurs="0"/>
+                <xsd:element ref="casa" minOccurs="0"/>
+                <xsd:element ref="trabajo" minOccurs="0"/>
+                <xsd:element ref="principal" minOccurs="0"/>
+                <xsd:element ref="fax" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="localizacion">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="ciudad"/>
+                <xsd:element ref="pais"/>
+                <xsd:element ref="geolocalizacion"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="tonos">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="llamada"/>
+                <xsd:element ref="sms"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

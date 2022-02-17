@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE agenda[
+<!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (informacion,empresa,telefonos,localizacion,tonos)>
+<!ATTLIST contacto id CDATA #REQUIRED>
+<!ELEMENT informacion (fotografia,titulo,nombre,apellido,pagina,fechaCumple,direccion)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT pagina (#PCDATA)>
+<!ELEMENT fechaCumple (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ATTLIST empresa nombre CDATA #REQUERID>
+<!ATTLIST empresa tipo CDATA #REQUERID>
+<!ELEMENT telefonos (movil|casa|trabajo|principal|fax)>
+<!ELEMENT movil (#PCDATA)>
+<!ELEMENT casa (#PCDATA)>
+<!ELEMENT trabajo (#PCDATA)>
+<!ELEMENT principal (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+<!ELEMENT localizacion (ciudad,pais,geolocalizacion)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT geolocalizacion (#PCDATA)>
+<!ELEMENT tonos (sms)>
+<!ELEMENT sms (#PCDATA)>
+]>
+
+<agenda>
+    <contacto id="1">
+        <informacion>
+            <fotografia>a</fotografia>
+            <titulo>s</titulo>
+            <nombre>Antonio</nombre>
+            <apellido>Vivaldi</apellido>
+            <pagina>f</pagina>
+            <fechaCumple>s</fechaCumple>
+            <direccion>s</direccion>
+        </informacion>
+        <empresa nombre= "empresa1" tipo="publica"/>
+        <telefonos>
+            <movil></movil>
+            <casa></casa>
+            <trabajo></trabajo>
+            <principal></principal>
+            <fax></fax>
+        </telefonos>
+        <localizacion>
+            <ciudad></ciudad>
+            <pais></pais>
+            <geolocalizacion></geolocalizacion>
+        </localizacion>
+        <tonos>
+            <sms></sms>
+        </tonos>
+    <contacto>
+
+</agenda>

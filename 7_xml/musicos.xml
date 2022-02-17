@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Musicos SYSTEM "musicos_clasicos.dtd">
+<Musicos>
+	<epocas>
+		<epoca id= "BR"> BARROCO</epoca>
+		<epoca id= "CL"> CLASICISMO</epoca>
+	</epocas>
+	<musico epocahistoria = "BR">
+		<nombre>Antonio</nombre>
+		<apellido>Vivaldi</apellido>
+		<obras>
+			<obra movimientos="4">Las Cuatro Estaciones</obra>
+			<obra movimientos="4">Gloria</obra>
+		</obras>
+		<localizacion>
+			<pais>Italia</pais>
+			<ciudad>Venecia</ciudad>
+		</localizacion>
+	</musico>
+	<musico epocahistoria = "CL">
+		<nombre>Nicolo</nombre>
+		<apellido>Paganini</apellido>
+		<obras>
+			<obra movimientos="4">Campanella</obra>
+			<obra movimientos="4">24 caprichos</obra>
+		</obras>
+		<localizacion>
+			<pais>Italia</pais>
+			<ciudad>Génova</ciudad>
+		</localizacion>
+	</musico>
+</Musicos>

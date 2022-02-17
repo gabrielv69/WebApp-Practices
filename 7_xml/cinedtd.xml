@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cinedtd.xsd">
+    <directores id="1">
+        <director>Quentin Tarantino</director>
+        <director>James Cameron</director>
+    </directores>
+    <peliculas>
+        <pelicula> Avatar </pelicula>
+        <pelicula> Titanic </pelicula>
+    </peliculas>
+    <!--distribuidor> distribuye</distribuidor!-->
+</cine>

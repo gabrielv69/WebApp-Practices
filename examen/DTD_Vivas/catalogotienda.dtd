@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT CATALOG (metadata,CDSTORES,CD*)>
+<!ELEMENT metadata (bookstore,owner)>
+<!ELEMENT bookstore (#PCDATA)>
+<!ELEMENT owner (#PCDATA)>
+<!ATTLIST owner prefix CDATA #REQUIRED>
+<!ELEMENT CDSTORES (store+)>
+<!ATTLIST store id ID #REQUIRED>
+<!ELEMENT store (name,geolocalization)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT geolocalization (latitude,longitude)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT longitude (#PCDATA)>
+<!ATTLIST CD storeId IDREF #IMPLIED>
+<!ELEMENT CD (TITLE,ARTIST,PRICE,YEAR,SPACE?,STATUS?,INVOICE?)>
+<!ELEMENT TITLE (#PCDATA)>
+<!ELEMENT ARTIST (#PCDATA)>
+<!ELEMENT PRICE (#PCDATA)>
+<!ELEMENT YEAR (#PCDATA)>
+<!ELEMENT SPACE EMPTY>
+<!ELEMENT STATUS (#PCDATA)>
+<!ELEMENT INVOICE (#PCDATA)>

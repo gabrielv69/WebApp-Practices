@@ -1,0 +1,5 @@
+pantalones,
+camisas,
+camisetas,
+chompas,
+botas

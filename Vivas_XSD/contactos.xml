@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contactos.xsd">
+    <contacto id="1">
+        <informacion>
+            <fotografia>a</fotografia>
+            <titulo>s</titulo>
+            <nombre>Antonio</nombre>
+            <apellido>Vivaldi</apellido>
+            <pagina>f</pagina>
+            <fechaCumple>s</fechaCumple>
+            <direccion>s</direccion>
+        </informacion>
+        <empresa nombreEmpresa= "empresa1">
+                <tipoEmpresa>pública</tipoEmpresa>
+         </empresa>
+        <telefonos>
+            <movil>3</movil>
+            <casa>2</casa>
+            <trabajo>3</trabajo>
+            <principal>4</principal>
+            <fax>3</fax>
+        </telefonos>
+        <localizacion>
+            <ciudad></ciudad>
+            <pais></pais>
+            <geolocalizacion></geolocalizacion>
+        </localizacion>
+        <tonos>
+            <llamada>Alert</llamada>
+            <sms>Message</sms>
+        </tonos>
+    </contacto>
+
+    <contacto id="2">
+        <informacion>
+            <fotografia>a</fotografia>
+            <titulo>s</titulo>
+            <nombre>Antonio</nombre>
+            <apellido>Vivaldi</apellido>
+            <pagina>f</pagina>
+            <fechaCumple>s</fechaCumple>
+            <direccion>s</direccion>
+        </informacion>
+        <empresa nombreEmpresa= "empresa2">
+            <tipoEmpresa>privada</tipoEmpresa>
+     </empresa>
+        <telefonos>
+            <movil>3</movil>
+            <casa>2</casa>
+        </telefonos>
+        <localizacion>
+            <ciudad></ciudad>
+            <pais></pais>
+            <geolocalizacion></geolocalizacion>
+        </localizacion>
+        <tonos>
+            <llamada>Alert</llamada>
+            <sms>Message</sms>
+        </tonos>
+    </contacto>
+
+    <contacto id="3">
+        <informacion>
+            <fotografia>a</fotografia>
+            <titulo>s</titulo>
+            <nombre>Antonio</nombre>
+            <apellido>Vivaldi</apellido>
+            <pagina>f</pagina>
+            <fechaCumple>s</fechaCumple>
+            <direccion>s</direccion>
+        </informacion>
+        <empresa nombreEmpresa= "empresa3">
+            <tipoEmpresa>pública</tipoEmpresa>
+     </empresa>
+        <telefonos>
+            <movil>3</movil>
+            <casa>2</casa>
+        </telefonos>
+        <localizacion>
+            <ciudad></ciudad>
+            <pais></pais>
+            <geolocalizacion></geolocalizacion>
+        </localizacion>
+        <tonos>
+            <llamada>Alert</llamada>
+            <sms>Message</sms>
+        </tonos>
+    </contacto>
+
+</agenda>
